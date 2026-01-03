@@ -127,7 +127,7 @@
 // template literals allow expression in  string 
 // let qty=34;
 // let rate=5.24
-// let total =`total amount ${(qty*rate).tofixed(2)}`;
+// let total =`total amount ${(qty*rate).toFixed(2)}`;
 // console.log(total);
 
 // ---------------------------date object
@@ -137,13 +137,119 @@
 // new date (millisecond)
 // new date(new string)
 // ex:-
-// let d=new date();
+// let d=new Date();//show current time and date
 // console.log(d);
-// new d=new(2018,10,23,8,26,56,540)//two parameter is nessesery
+// let d=new Date(2018,10,23,8,26,56,540);//two parameter is nessesery
 // console.log(d);
 //1 jan 1970 js startw` 
-new d=new(86400000)//two parameter is nessesery
-console.log(d);
+// let d=new Date(86400000)//two parameter is nessesery
+// console.log(d);
+// date formet:-
+// IOS date     '25-03-25'
+// short date  '30/25/2015'
+// long date     ''
+
+// let d=new Date('2015-03-25');
+// console.log(d);
+// let d1=new Date('01/01/2026');
+// console.log(d1);
+// let d2=new Date('jan 01 2026');
+// console.log(d2);
+// let d3=new Date('01 jan 2026');
+// console.log(d3);
+
+// parsing date:-
+// Date.parse() show  milllisecond between the date
+// let msec=Date.parse('march 21,2021')
+// console.log(msec)
+// let msec=Date.parse('01 jan 2026');
+// console.log(msec);
+// let msec1=Date.parse('17 july 2004');
+// console.log(msec1);
+// let date=msec-msec1
+// console.log(date)
+
+// date method:-
+// getfullyear()
+// const d=new Date();
+//  console.log(d);
+//  const ans =d.getFullYear();
+//  console.log(ans);
+//  getmonth():-
+// const ans =d.getMonth();
+//  console.log(ans);
+//  const mnt=['']
+// console.log()
+
+// getDate()month:-
+// const d=new Date();
+// console.log(d);
+// const ans=d.getDate()
+// console.log(ans);
+
+// const d=new Date();
+// console.log(d);
+// const ans=d.getHours()
+// console.log(ans);
+
+// const d=new Date();
+// console.log(d);
+// const ans=d.getMinutes()
+// console.log(ans);
+
+// const d=new Date();
+// console.log(d);
+// const ans=d.getSeconds()
+// console.log(ans);
+
+
+// const d=new Date();//between (0-999)
+// console.log(d);
+// const ans=d.getMilliseconds()
+// console.log(ans);
+
+// const d=new Date();//one less(5)
+// console.log(d);
+// const ans=d.getDay()
+// let week=['monday','tuesday','wednesday','thursday','friday','satarday','sunday']
+// console.log(week);
+
+//   math object:-
+    // const pi =Math.PI;
+    // console.log(pi);
+
+    // math.round:-the function is used to round integer
+    // const ans=Math.round(34.2784,2);//if after decimal more then 5 then one more its actuall value
+    // console.log(ans);
+  
+   // math.ceil():--the function is used to round value in upward
+//    const ans =Math.ceil(53.428);//always upward 
+//     console.log(ans);
+    // const ans1 =Math.floor(-53.428);//always downward(-54) 
+    // console.log(ans1);
+//     const ans2 =Math.trunc(535.428);//remove decimal value
+//     console.log(ans2);
+// Math.power:-find the power of given number
+    //  const ans1 =Math.pow(5,5);
+    // console.log(ans1);
+
+//   const ans1 =Math.sqrt(10);//it give square root
+//     console.log(ans1);
+//  const ans1 =Math.abs(-53428);//always give positive value
+//  console.log(ans1);
+ 
+    // const ans1 =Math.sign(-53428);//it give -1 if value is negetive and give 1 if value is positive for zero it remain 0
+    // console.log(ans1);
+    
+    // const ans1 =Math.random();//b/w 0 to 1   infinit number
+    // console.log(ans1);
+
+    
+    // const ans1 =Math.floor(Math.random()*10);
+    // console.log(ans1);
+    const ans1 =Math.floor(Math.random()*1000);
+    console.log(ans1);
+
     </script>
 </body>
 </html>
