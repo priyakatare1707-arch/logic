@@ -151,6 +151,63 @@ function mysum() {
     document.getElementById("demo").innerHTML = "Addition: " + ans;
 } 
  </script>  -->
+ <!-- enter phy marks : <input type="text" id="phy">
+ <br>
+ enter che marks : <input type="text" id="che">
+ <br>
+ enter math marks : <input type="text" id="math">
+ <br>
+ enter eng marks : <input type="text" id="eng">
+ <br>
+ <button id="btn1">calculate</button>
+ <hr>
+ <h1 id="demo">Answer</h1>
+ <h2 id="demo2">percentage</h2> -->
+
+
+ <!-- age : <input type="text" id="age">
+ <br>
+ height:<input type="text"  id="height">
+ <br>
+ weight : <input type="text"  id="weight">
+ <br>
+
+<button id="btn1">calculate</button>
+<hr>
+<h1 id="demo">men</h1>
+<h2   id="demo2">women</h2>
+<script>
+  document.getElementById("btn1").addEventListener("click",myCal);
+ function myCal(){
+
+  
+  
+      let age =Number(document.getElementById("age").value);
+      let height =Number(document.getElementById('height').value);
+      let weight =Number(document.getElementById('weight').value);
+      let  men=(10*weight)+(6.25*height)-(5*age)
+      let women=(10*weight)+(60.25*height)-(5*age)-161;
+      document.getElementById('demo').innerHTML='BMR'+ men;
+      document.getElementById('demo2').innerHTML='BMR'+ women;
+
+ }
+</script> -->
+
+
+
+<!-- <script>
+ document.getElementById('btn1').addEventListener('click',mycal);
+ function mycal(){
+        let phy =Number(document.getElementById('phy').value);
+         let che =Number(document.getElementById('che').value);
+         let math =Number(document.getElementById('math').value);
+          let eng =Number(document.getElementById('eng').value);
+        let tota=phy+che+math+eng;
+        let per=total/4;
+        document.getElementById('demo').innerHTML='addition:'  +  total;
+
+ }
+ </script> -->
 <script src="raj.js"></script>
 </body>
 
