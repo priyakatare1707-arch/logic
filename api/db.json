@@ -1,0 +1,11 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "empno": "102",
+      "empname": "Priya",
+      "city": "Bhopal",
+      "salary": 25000
+    }
+  ]
+}
