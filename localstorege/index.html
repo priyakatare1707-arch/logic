@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    //  function   setName(){
+       
+    //     localStorage.setItem("name1","priya");
+    //     localStorage.setItem("name2","riya");
+    //  }
+    function userLogin(){
+        
+        let myname=document.getElementById("nm").value;
+        let email=document.getElementById("email").value;
+        localStorage.setItem("name",myname);
+        localStorage.setItem("email",email);
+        
+    }
+
+    </script>
+</head>
+<body>
+    <!-- <button  onclick="setName()">click me!</button> -->
+
+    <a href="index.html">home</a>|
+    <a href="about.html">about</a>|
+    <a href="service.html">service</a>|
+    <a href="contect.html">contect</a>|
+    <hr>
+    <h1>welcome to home page</h1>
+    enter name: <input type="text"  id="nm">
+    enter email: <input type="text"  id="email">
+
+<button  onclick="userLogin()">login</button>
+</body>
+</html>

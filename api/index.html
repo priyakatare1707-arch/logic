@@ -6,51 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-   <body bgcolor="yellow">
-
-<button onclick="dataDisplay()">Click Data</button>
-<hr size="3" color="red">
-
-<p id="demo">Data Display</p>
-
-<script>
-let table = `
-<table border="1" cellpadding="5">
-<tr>
-  <th>User ID</th>
-  <th>ID</th>
-  <th>Title</th>
-  <th>Body</th>
-</tr>
-`;
-
-async function dataDisplay() {
-  const obj = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const myData = await obj.json();
-
-  myData.map((key) => {
-    table += `
-    <tr>
-      <td>${key.userId}</td>
-      <td>${key.id}</td>
-      <td>${key.title}</td>
-      <td>${key.body}</td>
-    </tr>`;
-  });
-
-  table += `</table>`;
-  document.getElementById("demo").innerHTML = table;
-}
-</script>
-
-
-  <!-- <a href="index.html">home</a>
-  <a href="insert.html">insert</a>
-  <a href="display.html">display</a>
-  <a href="update.html">update</a>
-  <a href="search.html">search</a>
-  <a href="contect.html">contect</a>
-  <hr    size="4"  color="red">
-  <h1>update employee data</h1> -->
+    
+    <a href="index.html"> home </a> 
+     <a href="insert.html"> insert  </a>
+      <a href="display.html"> display </a>
+       <a href="search.html"> search </a>
+        <a href="contact1.html"> contact </a>
+         <a href="update.html"> update</a>\
+         
+        <hr size="4" color="red">
+        <h1> main page  </h1>
 </body>
 </html>
